@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <script type="text/javascript" src="cards_js.js">
+
+		testingFunction() {
+			alert("hi");
+		}
+	</script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheel.css" />
+
+    <style>
+
+	iframe {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.saleitems {
+		float: left;
+	}
+		button, img, span {
+			margin-top: 2%;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+		}
+    input {
+        margin-top:10px;
+    }
+	</style>
+</head>
+<body>
+<header>
+    <div class="container col-lg-9 col-md-12 bannerImg">
+        <h1 id ="demo">Buy Rare Cards</h1>
+        <h2>Join the Vegan Revolution!</h2>
+    </div>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"></a>
+
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item" id="cartButton">
+                    <a class="nav-link" onclick="testingFunction()" href="#" > Cart <span id="cartNumber">0</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- <button type="button" onclick="myFunction()">Try it</button>-->
+</header>
+
+<section class="container col-lg-9 col-sm-12">
+    <h3>Shipping Address</h3>
+
+        <form>
+            <input class="col-lg-7 col-sm-12 mandatory" type="text" placeholder="Name">
+            <input class="col-lg-7 col-sm-12 mandatory" type="text" placeholder="Street Address or PO Box">
+            <input class="col-lg-7 col-sm-12" type="text" placeholder="Apt, Suite, Building (optional)">
+            <input class="col-lg-7 col-sm-12 mandatory" type="text" placeholder="City">
+            <input class="col-lg-7 col-sm-12 mandatory" type="text" placeholder="State/Providence">
+            <input id="verifyZip" class="col-lg-7 col-sm-12 mandatory" type="number" placeholder="ZIP">
+            <input class="col-lg-7 col-sm-12 mandatory"type="number" placeholder="Phone Number">
+        </form>
+
+    <h3>Payment information</h3>
+
+
+        <p>Enter your card information</p>
+        <input type="text" placeholder="Name on card">
+        <input type="number" placeholder="Card number">
+        <p>Expiration date</p>
+        <select>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+
+        </select>
+        <select>
+            <option value="2019">2019</option>
+            <option value="2020">2020</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+
+        </select>
+        <button class="col-lg-7 col-sm-12" onclick="isEmpty()" type="submit">Place your order</button>
+
+</section>
+<section class="col-lg-3 col-sm-12">
+</section>
+
+<script>
+    document.getElementById("beQty").innerHTML= localStorage.getItem("numBe") + " Blue Eyes White Dragon " + "$" + localStorage.getItem("numBe")*250;
+        document.getElementById("dmQty").innerHTML= localStorage.getItem("numDm") + " Dark Magician " + "$" + localStorage.getItem("numDm")*115;
+    document.getElementById("mewQty").innerHTML= localStorage.getItem("numMew") + " Mew " + "$" + localStorage.getItem("numMew")*89;
+	document.getElementById("subTotal").innerHTML=localStorage.getItem("numBe")*250 + localStorage.getItem("numDm")*115 + localStorage.getItem("numMew")*89;
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

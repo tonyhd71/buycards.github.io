@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+	<script type="text/javascript" src="cards_js.js">
+	
+	</script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="stylesheel.css" />
+	
+	<style>
+	iframe {
+		display:block;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+	.saleitems {
+		float: left;
+	}
+		button, img, span {
+			margin-top: 2%;
+			margin-right: auto;
+			margin-left: auto;
+			display: block;
+		}
+
+	</style>
+</head>
+<body>
+<header>
+<div class="container col-lg-9 col-md-12 bannerImg">
+	<h1 id ="demo">Buy Rare Cards</h1>
+</div>
+<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <!-- Brand -->
+  <a class="navbar-brand" href="#"></a>
+
+  <!-- Toggler/collapsibe Button -->
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="index.html">Home</a>
+      </li>
+
+		<li class="nav-item" id="cartButton">
+			<a class="nav-link" onclick="goToCheckOut()" href="checkout.html" > Cart <span id="cartNumber">0</span></a>
+		</li>
+	</ul>
+  </div> 
+</nav>
+<!-- <button type="button" onclick="myFunction()">Try it</button>-->
+ </header>
+ <!--<section id="homeVideoBar" class="container col-lg-8 col-md-12">
+ <span id="hoverVideo"></span>
+	<ul>
+		<li><iframe onmouseleave="hoverAwayVideo()" onmouseover="hoverOverVideo()" id="miceLabs" width="176" height="128"
+src="https://www.youtube.com/embed/8IR3fDGcWqI">
+</iframe></li>
+		<li><iframe onmouseleave="hoverAwayVideo()" onmouseover="hoverOverFurVideo()" id="furTrapping" width="176" height="128"
+src="https://www.youtube.com/embed/iQxWOTCjg74">
+</iframe></li>
+		<li><iframe onmouseleave="hoverAwayVideo()" onmouseover="hoverOverDairyVideo()" id="dairyTruth" width="176" height="128"
+src="https://www.youtube.com/embed/CKeE_SPSbio">
+</iframe></li>
+
+		<li><iframe id="zoosTruth" width="176" height="128"
+src="https://www.youtube.com/embed/0Q6iNPykygE">
+</iframe></li>
+		<li></li>
+
+	</ul>
+ </section>-->
+<section class="container col-lg-9 col-sm-12">
+		<div class="col-lg-3 saleitems">
+			<span class="col-lg-12 saleItemTitle">Blue Eyes W. Dragon</span>
+			<img class="img-responsive col-lg-10 col-sm-12" src="bewd.jpg"/>
+			<span class=" col-lg-12 saleItemTitle">$250 DDS-001</span>
+			<span class=" col-lg-12 saleItemTitle" id="showBeAmt">0 </span>
+
+			<button onclick="addBEWDToCart()" class="col-lg-8 col-sm-12" type="button">Add to Cart</button>
+
+		</div>
+	<div class="col-lg-3 saleitems">
+		<span class="col-lg-12 saleItemTitle">Dark Magician</span>
+
+		<img class="img-responsive col-lg-10 col-sm-12" src="dm.jpg"/>
+		<span class=" col-lg-12 saleItemTitle">$115 SDY-006</span>
+		<span class=" col-lg-12 saleItemTitle" id="showDmAmt">0</span>
+
+		<button onclick="addDMToCart()" class="col-lg-8 col-sm-12" type="button">Add to Cart</button>
+
+	</div>
+	<div class="col-lg-3 saleitems">
+		<span class="col-lg-12 saleItemTitle">Mew</span>
+
+		<img class="img-responsive col-lg-10 col-sm-12" src="mew.jpg"/>
+		<span class=" col-lg-12 saleItemTitle">$89 Mint Condition</span>
+		<span class=" col-lg-12 saleItemTitle"id="showMewAmt">0 </span>
+
+		<button onclick="addMewToCart()" style="margin-top: 13px;" class="col-lg-8 col-sm-12" type="button">Add to Cart</button>
+
+	</div>
+	<div class="col-lg-2 saleItems">
+
+	</div>
+</section>
+
+
+<script>
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

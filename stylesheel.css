@@ -1,0 +1,133 @@
+span {
+	text-align: center;
+}
+button {
+	justify-content: center;
+}
+#cartButton {
+	float:right;
+	color:red;
+}
+body {
+    background-color:#e6f7ff;
+	position:relative;
+}
+.fightingBody {
+	background-image:url("fighting.jpg");
+
+}
+.gamingBody {
+	background-image:url("vgbg.jpg");
+
+}
+header {
+	background-color:white;
+	padding:10px;
+	margin-right:10px;
+	position:relative;
+	margin-bottom:3%;
+}
+
+.bannerImg {
+			background-repeat: no-repeat;
+
+		background-image: url("bg.png");
+		display:block;
+		margin-right:auto;
+		margin-left:auto;
+		color:#e6f7ff;
+}
+.dropdown {
+  overflow: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+.nav-item a.active {
+	background-color:#99cfff;
+	margin-top:1%;
+}
+.topNav {
+	background-color: gray;
+}
+/*section {
+	width:100%;
+}
+*/
+div.clickDoc {
+	margin-right:3%;
+}
+#animalsUsedInSection {
+		background-color:white;
+
+}
+div.main, div.clickDoc {
+	background-color:white;
+/* 	width:60%;
+ */	float:left;
+	padding:10px;
+}
+#homeVideoBar {
+		background-color:white;
+		padding:10px;
+		margin-bottom:2%;
+}
+div.sideNews {
+	background-color:white;
+/* 	width:25%;
+ */	float:right;
+	padding:10px;
+	margin-left:1%;
+
+}
+.socialMediaImgs {
+	height:30px;
+	width:30px;
+}
+.sideNavImages {
+	width:90%;
+	
+}
+
+ footer {
+    background-color:#D3D3D3;
+	position:relative;
+	padding:10px;
+	text-align:center;
+	right:0;
+	overflow:hidden;
+	left:0;
+	bottom:0;
+	margin:auto;
+}
+h1, h2, h3 {
+		text-align:center;
+		
+	}
+	.topNav a {
+		padding:12px;
+		display:inline-block;
+	}
+	#docsLinks li a{
+		padding:12px;
+		display:inline-block;
+		
+	}
+	#homeVideoBar ul li {
+		display:inline-block;
+		
+	}
